@@ -37,7 +37,7 @@
   .eyebrow { font-size: 13px; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
   h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 0 0 14px; font-weight: 650; letter-spacing: -.01em; }
   .lead { color: var(--muted); margin: 0 0 40px; max-width: 660px; font-size: 16px; }
-  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
   .card {
     position: relative;
     display: flex; flex-direction: column;
@@ -52,6 +52,7 @@
   .shot { aspect-ratio: 16 / 10; background: #1a1d1f center / cover no-repeat; border-bottom: 1px solid var(--line); }
   .body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
   .tag { font-size: 13px; color: var(--muted); }
+  .new { display: inline-block; margin-left: 8px; padding: 1px 8px; border-radius: 999px; background: #f2a15a; color: #141414; font-size: 12px; font-weight: 600; }
   h2 { font-size: 20px; margin: 0; font-weight: 620; }
   .desc { color: var(--muted); font-size: 14px; margin: 2px 0 14px; flex: 1; }
   .links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 20px; }
@@ -73,7 +74,7 @@
   <main class="wrap">
     <p class="eyebrow">MOKUKU II · 内部预览</p>
     <h1>官网设计方案预览</h1>
-    <p class="lead">三个版本的 MOKUKU II 官网，点开即可浏览。电脑和手机都能看，建议每个都从头滑到尾，点一点设备屏幕、反应按钮和功能详情。</p>
+    <p class="lead">四个版本的 MOKUKU II 官网，点开即可浏览。电脑和手机都能看，建议每个都从头滑到尾，点一点设备屏幕、反应按钮和功能详情。</p>
 
     <div class="grid">
       <article class="card">
@@ -111,6 +112,18 @@
           <div class="links">
             <a class="go" href="./premium/">打开网页 →</a>
             <a class="alt" href="./premium/?v=nav">导航优先版</a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="shot" style="background-image:url('./previews/d.jpg')" role="img" aria-label="方案 D 首屏截图"></div>
+        <div class="body">
+          <span class="tag">方案 D<span class="new">新</span></span>
+          <h2>功能强项版</h2>
+          <p class="desc">按负责人的 product 文档重排：更顺的屏幕（10/30 Hz 对比）、车辆数据与健康、驾驶感知、驾驶日记为主，表情作为配合。</p>
+          <div class="links">
+            <a class="go" href="./v2/">打开网页 →</a>
+            <a class="alt" href="./v2/?v=nav">导航优先版</a>
           </div>
         </div>
       </article>
